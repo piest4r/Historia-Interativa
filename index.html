@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca da cidade perdida</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <p>
+                Você é um herói encarregado de encontrar o A Estrela do Destino, um objeto de outra dimensão paralela que pode salvar seu reino do colapso. No entanto, A Estrela está protegida por enigmas e perigos. Suas decisões moldarão o desfecho dessa jornada.
+            <br> A Floresta Encantada
+            Você chega à entrada de uma floresta. A trilha parece perigosa.
+            
+            </p>
+            <button class="btn-proximo" data-proximo="1">Entrar na floresta</button>
+            <button class="btn-proximo" data-proximo="2">Contornar a floresta</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você encontra um guia místico que oferece ajuda. Ele fala sobre uma antiga vila escondida com uma pista importante.</p>
+            <button class="btn-proximo" data-proximo="3">Seguir as instruções do guia</button>
+            <button class="btn-proximo" data-proximo="4">Ignorar</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você encontra pegadas de um monstro misterioso, levando a um esconderijo. Ele oferece um mapa, mas exige parte do poder da Estrela.</p>
+            <button class="btn-proximo" data-proximo="4">Seguir as instruções do monstro</button>
+            <button class="btn-proximo" data-proximo="4">Ignorar</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Você chega à vila escondida.Os moradores dizem que a Estrela está além das montanhas, mas um código secreto é necessário para abri-lo.</p>
+            <button class="btn-proximo" data-proximo="5">Investigar</button>
+            <button class="btn-proximo" data-proximo="7">Seguir para as montanhas</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <p>Você se perde, mas encontra uma caverna estranha. Você encontra runas antigas que revelam o início de um enigma.</p>
+            <button class="btn-proximo" data-proximo="7">Investigar</button>
+            <button class="btn-proximo" data-proximo="7">Seguir para as montanhas</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Você descobre o código. Nas montanhas, um grupo de sentinelas bloqueia o caminho.</p>
+            <button class="btn-proximo" data-proximo="6">Lutar</button>
+            <button class="btn-proximo" data-proximo="7">Evita-los</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Você ganha acesso direto, mas sofre ferimentos. Você precisa atravessar um pantano traiçoeiro.</p>
+            <button class="btn-proximo" data-proximo="8">Seguir pelo curto e perigoso caminho</button>
+            <button class="btn-proximo" data-proximo="8">Usar um barco improvisado.</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Você encontra uma entrada alternativa, mas enfrenta um atraso. Você precisa atravessar um pantano traiçoeiro.</p>
+            <button class="btn-proximo" data-proximo="8">Seguir pelo caminho mais curto, mas perigoso.</button>
+            <button class="btn-proximo" data-proximo="8">Usar um barco improvisado.</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Você encontra um viajante que conhece a Estrela. ele menciona que a Estrela requer um coração puro para ser usada. </p>
+            <button class="btn-proximo" data-proximo="9">Ouvir</button>
+            <button class="btn-proximo" data-proximo="9.1">Ignorar</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Ele revela o significado das runas ou o código.Você chega à torre onde a Estrela está guardada, mas um guardião impede sua entrada.</p>
+            <button class="btn-proximo" data-proximo="11">Lutar</button>
+            <button class="btn-proximo" data-proximo="10.1">Conversar</button>
+        </div>
+        <div class="passo" id="passo-9.1">
+            <p>Você chega à torre onde a Estrela está guardada, mas um guardião impede sua entrada.</p>
+            <button class="btn-proximo" data-proximo="10">Lutar</button>
+            <button class="btn-proximo" data-proximo="10.1">Conversar</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Você derrota o guardião, mas fica fraco para os desafios seguintes. Dentro da torre, há armadilhas mágicas que testam seu conhecimento sobre as pistas que encontrou antes.</p>
+            <button class="btn-proximo" data-proximo="11">Tentar resolver o enigma sozinho.</button>
+        </div>
+        <div class="passo" id="passo-10.1">
+            <p>Ele deixa você entrar em troca de um item ou promessa. Dentro da torre, há armadilhas mágicas que testam seu conhecimento sobre as pistas que encontrou antes.</p>
+            <button class="btn-proximo" data-proximo="11.1">Usar as runas/código que você aprendeu</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <p>Você erra e desencadeia armadilhas, atrasando sua progressão.Finalmente, você vê a Estrela, mas um espírito maligno surge para protegê-lo.</p>
+            <button class="btn-proximo" data-proximo="12">Atacar o espírito diretamente.</button>
+            <button class="btn-proximo" data-proximo="12">Usar inteligência para derrotá-lo.</button>
+        </div>
+        <div class="passo" id="passo-11.1">
+            <p>Você passa com facilidade. Finalmente, você vê a Estrela, mas um espírito maligno surge para protegê-lo.</p>
+            <button class="btn-proximo" data-proximo="12">Atacar o espírito diretamente.</button>
+            <button class="btn-proximo" data-proximo="12">Usar inteligência para derrotá-lo.</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>O espírito é derrotado, mas você perde parte de sua energia vital. Ao tocar na Estrela, uma voz ecoa: “Somente quem tiver um coração puro pode usá-lo.”</p>
+            <button class="btn-proximo" data-proximo="13">Aceitar o desafio e provar sua pureza.</button>
+            <button class="btn-proximo" data-proximo="14">Tentar enganar o poder da Estrela.</button>
+        </div>
+        <div class="passo" id="passo-12.1">
+            <p>O espírito é selado. Ao tocar na Estrela, uma voz ecoa: “Somente quem tiver um coração puro pode usá-lo.”</p>
+            <button class="btn-proximo" data-proximo="13">Aceitar o desafio e provar sua pureza.</button>
+            <button class="btn-proximo" data-proximo="14">Tentar enganar o poder da Estrela.</button>
+        </div>
+        <div class="passo" id="passo-13">
+            <p>A Estrela o aceita como portador. Com a Estrela em mãos, você pode usá-lo de duas maneiras:</p>
+            <button class="btn-proximo" data-proximo="15">Restaurar o equilíbrio do reino.</button>
+            <button class="btn-proximo" data-proximo="16">Usar o poder para seus próprios fins.</button>
+        </div>
+        <div class="passo" id="passo-14">
+            <p>Você falha, e a Estrela o rejeita.</p>
+            <p>Final C: O reino se perde para sempre devido à sua falha.</p>
+        </div>
+        <div class="passo" id="passo-15">
+            <p>O reino é salvo, e você se torna um herói lendário.</p>
+            <p>Final A: Você é celebrado como um salvador.</p>
+        </div>
+        <div class="passo" id="passo-16">
+            <p> O reino cai em trevas, mas você governa como um tirano.</p>
+            <p>Final B: Você é visto como um traidor do reino.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
